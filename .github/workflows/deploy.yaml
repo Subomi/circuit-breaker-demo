@@ -17,11 +17,11 @@ name: Build and Deploy to Google Compute Engine
 on:
   push:
     branches:
-    - main
+    - server-app
 
 env:
   PROJECT_ID: ${{ secrets.GCE_PROJECT }}
-  IMAGE_NAME: ${{ secrets.IMAGE_NAME }}
+  IMAGE_NAME: ${{ secrets.SERVER_IMAGE_NAME }}
   IMAGE_NAME_ZONE: us-central1-a
 
 jobs:

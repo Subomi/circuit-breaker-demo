@@ -1,3 +1,3 @@
-require './server'
+require './payment_service'
 
 run Server
