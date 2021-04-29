@@ -9,4 +9,5 @@ RUN gem install bundler:2.1.4 && \
     gem install grpc --platform=universal-darwin && \
     bundle install
 
+EXPOSE 9292
 CMD ["bundle", "exec", "puma", "-C", "puma.rb"]
