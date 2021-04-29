@@ -6,6 +6,7 @@ COPY . .
 
 RUN gem install bundler:2.1.4 && \
     gem update --system && \
-    gem install grpc --platform=universal-darwin
+    gem install grpc --platform=universal-darwin && \
+    bundle install
 
 CMD ["bundle", "exec", "puma", "-C", "puma.rb"]
