@@ -77,7 +77,7 @@ class PayDecoratedWithCircuitbox
       logger: logger,
       time_window: 60,
       volume_threshold: 5,
-      error_threshold: 70
+      error_threshold: 30
     }
   end
 end
