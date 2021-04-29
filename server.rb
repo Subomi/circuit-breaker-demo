@@ -59,7 +59,7 @@ class PayDecoratedWithCircuitbox
       PaymentService.new(@user_id).make_payment
     end
 
-    return response.parsed_response unless response.body.nil? || response.body.empty?
+    return response.parsed_response unless response.nil?
     error_response
   end
 
