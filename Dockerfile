@@ -4,7 +4,7 @@ RUN mkdir /app
 WORKDIR /app
 COPY . .
 
-RUN gem install bundle:2.1.4 && \
+RUN gem install bundler:2.1.4 && \
     gem update --system && \
     gem install grpc --platform=universal-darwin
 
