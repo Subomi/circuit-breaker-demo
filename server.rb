@@ -9,7 +9,7 @@ class PaymentService
   end
 
   include HTTParty
-  base_uri '0.0.0.0:9070'
+  base_uri '10.128.0.8:9070'
 
   def initialize(user_id)
     @user_id = user_id
